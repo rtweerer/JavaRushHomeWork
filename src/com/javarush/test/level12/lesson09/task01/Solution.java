@@ -13,6 +13,6 @@ public class Solution
 
         public void swim();
 
-        11
+
     }
 }
