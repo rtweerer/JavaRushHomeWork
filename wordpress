@@ -1,1 +1,5 @@
-кеварпапр
+public_html
+
+index.php
+define('WP_USE_THEMES', true); загружать ли темы - да
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );   подключает темы
