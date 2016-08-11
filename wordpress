@@ -24,7 +24,66 @@ require_once( ABSPATH . 'wp-config.php' );
 	
 		wp_check_php_mysql_versions();
 	wp_load_translations_early();
-	________________________________
+________________________________
+template-loader.php// потом распишу
+____________________________________
+wp-config.php // корневик
+____________________________________
+/** Имя базы данных для WordPress */
+define('DB_NAME', 'a95414bd_1');
+/** Имя пользователя MySQL */
+define('DB_USER', 'a95414bd_1');
+/** Пароль к базе данных MySQL */
+define('DB_PASSWORD', 'z444z444');
+/** Имя сервера MySQL */
+define('DB_HOST', 'localhost');
+/** Кодировка базы данных для создания таблиц. */
+define('DB_CHARSET', 'utf8mb4');
+/** Схема сопоставления. Не меняйте, если не уверены. */
+define('DB_COLLATE', '');
+
+ * Уникальные ключи и соли для аутентификации.
+
+define('AUTH_KEY',         '|qQhI-p,Wk7-AD|8& uD&ti.%xJ|p^4=_[@/HEY-sI8p!r=_dz?c?u >IeYIpwi#');
+define('SECURE_AUTH_KEY',  'M)7}4V*4MANSPgTJ:[sh)EZ[Hk{pvL>| Q{7wxC md[<EG@eB^W!F#iG-r!BkO7n');
+define('LOGGED_IN_KEY',    '?Min* A-4hc|F23@2P~:Ng44E?)g/2?o~H6(G:qa5yLH4lI?haoBbnv>@CQx0]_p');
+define('NONCE_KEY',        '(^*J{%1)CP+<_9KhVN|e)Mkx/#W*`YI-Pn^n=!~zr^@T-B{sG{MZtOx$cAL{^&nY');
+define('AUTH_SALT',        'K)Uw.F6##KnfB3vO0i<[O^Z_5;yNqSy~-ztaq8[1gSs-f!.,-hL-G?8;om/0M&`u');
+define('SECURE_AUTH_SALT', 'I77,y89j=`P$@KEHr+n;{|5Ux6/0%RDELwcgk.V~Kfo_K?@nl9CS+bi~HoC+UsDT');
+define('LOGGED_IN_SALT',   '/=`J!!o$]7kH>GFr1ZKUdX?UX`lgw,Do@.%;nF`EH8&L_v@v#SaszqL%i!QQl$ml');
+define('NONCE_SALT',       ' 28HwbiNm8g9{~tiMg?b?HTe!9COU;~eauXI3[Lv<@DFz1URs[_9B} ;?.6v)$](');
+
+$table_prefix  = 'wp_';
+
+define('WP_DEBUG', false); // включение отладки
+
+require_once(ABSPATH . 'wp-settings.php');
+____________________________________________
+wp-settings.php
+____________________________________________
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	    
 	    
 	    
