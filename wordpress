@@ -61,9 +61,16 @@ require_once(ABSPATH . 'wp-settings.php');
 ____________________________________________
 wp-settings.php
 ____________________________________________
-
-
-
+define( 'WPINC', 'wp-includes' );
+require( ABSPATH . WPINC . '/load.php' );
+require( ABSPATH . WPINC . '/default-constants.php' );
+global $wp_version, $wp_db_version, $tinymce_version, $required_php_version, $required_mysql_version, $wp_local_package;
+require( ABSPATH . WPINC . '/version.php' );
+global $blog_id;
+wp_initial_constants();
+wp_check_php_mysql_versions();
+@ini_set( 'magic_quotes_runtime', 0 );
+@ini_set( 'magic_quotes_sybase',  0 );
 
 
 
