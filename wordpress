@@ -1,6 +1,31 @@
 public_html
 ____________
-index.php
+index.php  // корневик
 ______________
 define('WP_USE_THEMES', true); загружать ли темы - да
-require( dirname( __FILE__ ) . '/wp-blog-header.php' );   подключает темы
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );   подключает темы/ директория текущего файла
+__________________________
+
+wp-blog-header.php  // корневик
+_______________________________
+$wp_did_header = true;
+require_once( dirname(__FILE__) . '/wp-load.php' ); 
+wp();
+require_once( ABSPATH . WPINC . '/template-loader.php' );
+_______________________________________________
+wp-load.php // корневик
+___________________________________
+define( 'ABSPATH', dirname(__FILE__) . '/' ); // пишет путь к корневику
+error_reporting( E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_ERROR | E_WARNING | E_PARSE | E_USER_ERROR | E_USER_WARNING | E_RECOVERABLE_ERROR );
+require_once( ABSPATH . 'wp-config.php' );
+
+	define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' );
+	require_once( ABSPATH . WPINC . '/version.php' );
+	
+		wp_check_php_mysql_versions();
+	wp_load_translations_early();
+	________________________________
+	    
+	    
+	    
+	    
